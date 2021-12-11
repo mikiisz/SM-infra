@@ -13,13 +13,38 @@ Terraform v1.1.0
 on darwin_amd64
 ```
 
+```shell
+$ which ssh-keygen 
+
+/usr/bin/ssh-keygen
+```
+
 ### Usage
 
-1. update `*_cloud/terragrunt.hcl` configs under `locals`
-2. cd into `*_cloud`
-3. run: `terragrunt init`/`terragrunt plan`/`terragrunt apply`
-4. teardown: `terragrunt destroy`
+1. Update `./*/terragrunt.hcl` config files under `locals`.
 
-### Infra
+```terraform
+locals {
+  # update aws bucket name and aws region according to your aws source
+  bucket     = "your-bucket-name"
+  aws_region = "your-region"
+}
+```
 
-![infra](./infra.png)
+2. Generate certificates for client, check `./client/README.md`.
+
+3. Init, plan and apply terragrunt for each package in following order: `private_cloud`, `public_cloud`, `client`.
+
+```shell
+$ cd private_cloud
+$ terragrunt init
+$ terragrunt plan
+$ terragrunt apply
+```
+
+4. Teardown services: `terragrunt destroy`.
+
+```shell
+$ cd private_cloud
+$ terragrunt destroy
+```

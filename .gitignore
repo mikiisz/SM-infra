@@ -1,4 +1,8 @@
 .idea
+
 .terragrunt-cache
 .terraform.lock.hcl
 .terraform
+
+ssh_cert.pub
+ssh_cert
