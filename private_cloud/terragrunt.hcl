@@ -2,10 +2,9 @@ remote_state {
   backend = "s3"
 
   config = {
-    bucket               = local.bucket
-    workspace_key_prefix = "private_cloud"
-    key                  = "terraform.state"
-    region               = local.aws_region
+    bucket = local.bucket
+    key    = "private-terraform.state"
+    region = local.aws_region
   }
 }
 
