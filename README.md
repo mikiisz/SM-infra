@@ -19,6 +19,12 @@ $ which ssh-keygen
 /usr/bin/ssh-keygen
 ```
 
+```shell
+$ npm --version
+
+8.1.0
+```
+
 ### Usage
 
 1. Update `./*/terragrunt.hcl` config files under `locals`.
@@ -42,7 +48,15 @@ $ terragrunt plan
 $ terragrunt apply
 ```
 
-4. Teardown services: `terragrunt destroy`.
+4. Mobile app.
+
+```shell
+$ cd mobile_app
+$ npm install
+$ npm start
+```
+
+5. Teardown services: `terragrunt destroy`.
 
 ```shell
 $ cd private_cloud
