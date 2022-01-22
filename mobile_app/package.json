@@ -17,7 +17,8 @@
     "react-native-gesture-handler": "~2.1.0",
     "react-native-reanimated": "~2.3.1",
     "react-native-screens": "~3.10.1",
-    "react-native-web": "0.17.1"
+    "react-native-web": "^0.17.5",
+    "ssh2": "^1.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

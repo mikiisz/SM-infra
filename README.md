@@ -48,12 +48,12 @@ $ terragrunt plan
 $ terragrunt apply
 ```
 
-4. Mobile app.
+4. Update credentials under `./mobile_app/config.json` and start mobile app.
 
 ```shell
 $ cd mobile_app
 $ npm install
-$ npm start
+$ expo start
 ```
 
 5. Teardown services: `terragrunt destroy`.

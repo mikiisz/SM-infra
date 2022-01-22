@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
     },
     headerText: {
         fontSize: 35,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        textAlign: "center"
     },
     contentText: {
         fontSize: 20,

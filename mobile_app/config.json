@@ -1,0 +1,4 @@
+{
+  "EC2_IP_ADDRESS": "127.0.0.1",
+  "EC2_KEY_PATH": "../client/ssh_cert"
+}
