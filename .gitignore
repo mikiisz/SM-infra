@@ -10,3 +10,5 @@ ssh_cert
 package-lock.json
 node_modules
 .expo
+
+venv
